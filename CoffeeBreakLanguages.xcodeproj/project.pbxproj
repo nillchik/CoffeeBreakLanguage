@@ -6,14 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EA6DCA5A2F7342BD004896CC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EA6DCA592F7342BD004896CC /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		EA16D1212F82ABBD0087F6D8 /* CoffeeBreakLanguages-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CoffeeBreakLanguages-Info.plist"; sourceTree = "<group>"; };
 		EA6DCA1B2F72CE88004896CC /* CoffeeBreakLanguages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeBreakLanguages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		EA6DCA1D2F72CE88004896CC /* CoffeeBreakLanguages */ = {
+		EA6DCA2C2F72CE9A004896CC /* App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CoffeeBreakLanguages;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6DCA5A2F7342BD004896CC /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +38,8 @@
 		EA6DCA122F72CE88004896CC = {
 			isa = PBXGroup;
 			children = (
-				EA6DCA1D2F72CE88004896CC /* CoffeeBreakLanguages */,
+				EA16D1212F82ABBD0087F6D8 /* CoffeeBreakLanguages-Info.plist */,
+				EA6DCA2C2F72CE9A004896CC /* App */,
 				EA6DCA1C2F72CE88004896CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,10 +68,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				EA6DCA1D2F72CE88004896CC /* CoffeeBreakLanguages */,
+				EA6DCA2C2F72CE9A004896CC /* App */,
 			);
 			name = CoffeeBreakLanguages;
 			packageProductDependencies = (
+				EA6DCA592F7342BD004896CC /* FirebaseFirestore */,
 			);
 			productName = CoffeeBreakLanguages;
 			productReference = EA6DCA1B2F72CE88004896CC /* CoffeeBreakLanguages.app */;
@@ -94,6 +102,9 @@
 			);
 			mainGroup = EA6DCA122F72CE88004896CC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EA6DCA582F7342BD004896CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EA6DCA1C2F72CE88004896CC /* Products */;
 			projectDirPath = "";
@@ -251,15 +262,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CoffeeBreakLanguages/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/CoffeeBreakLanguages/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = JX7H248BGZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoffeeBreakLanguages-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -280,15 +293,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CoffeeBreakLanguages/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/CoffeeBreakLanguages/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = JX7H248BGZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoffeeBreakLanguages-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +339,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA6DCA582F7342BD004896CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA6DCA592F7342BD004896CC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA6DCA582F7342BD004896CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA6DCA132F72CE88004896CC /* Project object */;
 }
